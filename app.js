@@ -58,6 +58,7 @@ app.use((req, res) => {
 });
 
 sequelize.sync()
+
   .then(() => {
     console.log('Base de datos sincronizada');
     app.listen(port, () => {
